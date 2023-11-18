@@ -7,26 +7,6 @@ public class Fraction
         private int _top;
         private int _bottom;
 
-        // public string GetTop()
-        // {
-        //     return SetTop;
-        // }
-
-        // public void SetTop(int top)
-        // {
-        //     _top = top;
-        // }
-
-        // public string GetBottom()
-        // {
-        //     return SetBottom;
-        // }
-
-        // public void SetBottom(int bottom)
-        // {
-        //     _bottom = bottom;
-        // }
-
         public Fraction()
         {
             _top = 1;
