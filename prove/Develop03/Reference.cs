@@ -8,14 +8,14 @@ public class Reference
     public string GetDisplayText()
     {
         return "Hi!";
-    };
+    }
 
     public ScriptureRef(string book, int chapter, int verse)
     {
         _book = book;
         _chapter = chapter;
         _verse = verse;
-    };
+    }
 
     public ScriptureRef(string book, int chapter, int verse, int endVerse)
     {
@@ -28,10 +28,10 @@ public class Reference
     {
         string text = $"{_book} {_chapter}:{_verse}";
         return text;
-    };
+    }
     public string GetFullScripRef()
     {
-        string text = $"{_book} {_chapter}:{_verse}-{_endVerse}"
+        string text = $"{_book} {_chapter}:{_verse}-{_endVerse}";
         return text;
     }
 

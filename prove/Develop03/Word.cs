@@ -6,17 +6,17 @@ public class World
     public void Hide()
     {
 
-    };
+    }
     public void Show()
     {
 
-    };
+    }
     public bool IsHidden()
     {
 
-    };
+    }
     public string GetDisplayText()
     {
         return text;
-    };
+    }
 }
