@@ -1,22 +1,24 @@
-using Internal;
+
+using System.Collections.Concurrent;
+using System.Runtime.Serialization;
+using System.Reflection.Emit;
+using System.Data;
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Reference r1 = new ScriptureRef(John,3,5);
-        Console.WriteLine(r1.GetScripRef);
+        
+        Reference r1 = new Reference("Mosiah",3,19);
+        Console.WriteLine(r1.GetDisplayText());
 
-        // // This will start by displaying "AAA" and waiting for the user to press the enter key
-        // Console.WriteLine("AAA");
-        // Console.ReadLine();
+        Reference r2 = new Reference("Mosiah",3,19,20);
+        Console.WriteLine(r2.GetDisplayText());
 
-        // // This will clear the console
-        // Console.Clear();
-
-        // // This will show "BBB" in the console where "AAA" used to be
-        // Console.WriteLine("BBB");
+        Console.Clear();
+        Console.Write(r1.GetFullScripRef + " ");
+        Console.Write("scripture Here");
 
         Console.WriteLine("Hello Develop03 World!");
     }

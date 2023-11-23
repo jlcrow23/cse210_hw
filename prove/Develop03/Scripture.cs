@@ -1,19 +1,25 @@
+using System.Runtime.CompilerServices;
 public class Scripture
 {
-    private string _reference(string Reference);
-    private string  List<Word> _words = new List<Word>();
+    private string _reference;
+    private string _words;
+
+    public string scripture()
+    {
+        return "";
+    }
+    public string GetDisplayText()
+    {
+        return "";
+    }
+    public bool IsCompletelyHidden()
+    {
+        return true;
+    }
+
     public void HideRandomWords(int numberToHide)
     {
         
     }
-    public string GetDisplayText()
-    {
-        return text;
-    }
-    public bool IsCompletelyHidden()
-    {
-
-    }
-
 
 }
