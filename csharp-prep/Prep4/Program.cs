@@ -4,28 +4,36 @@ class Program
 {
     static void Main(string[] args)
     {
-        // //List words
+        // ***** List words
         // List<string> words = newList<string>();
-        // //Add words to list
+
+        // ***** Add words to list
         // words.Add("phone");
         // words.Add("keyboard");
         // words.Add("mouse");
-        // //Count words
+
+        // ***** Count words
         // Console.WriteLine(words.Count);
-        // //List numbers
+
+        // ***** List numbers
         // List<int> numbers = new List<int>();
-        // //Refer to library at top
+
+        // ***** Refer to library at top
         // using System.Collections.Generic;
-        // // Iterate through a list
+
+        // ***** Iterate through a list
         // foreach (string word in words)
         // {
         //     Console.WriteLine(word);
         // }
-        // //Access items by index
+
+        // ***** Access items by index
         // for (int i = 0; i < words.COunt; i++)
         // {
         //     Console.WriteLine(words[i]);
         // }
+
+        // ***** practice creating list
         List<int> numbers = new List<int>();
         
         int userNumber = -1;
@@ -42,7 +50,7 @@ class Program
             }
         }
 
-        //Compute the sum
+        // ***** Compute the sum
         int sum = 0;
         foreach (int number in numbers)
         {
@@ -50,11 +58,11 @@ class Program
         }
         Console.WriteLine($"The sum of the numbers is: {sum}");
 
-        //Part 2: Average
+        // ***** Part 2: Average
         float average =((float)sum) / numbers.Count;
         Console.WriteLine($"The average of the numbers is: {average}");
 
-        //Part 3: Max
+        // ***** Part 3: Max
         int max = numbers[0];
 
         foreach (int number in numbers)
