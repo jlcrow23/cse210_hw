@@ -1,4 +1,5 @@
 
+
 using System;
 
 namespace JournalProgram
@@ -19,20 +20,22 @@ namespace JournalProgram
                 int userChoice = int.Parse(Console.ReadLine());
 
                 Entry anEntry = new Entry();
-                Journal journals = new Journal();
+                // Journal journals = new Journal();
+                List<string> journalEntries = new List<string>();
                 
                 if (userChoice == 1)
                 {
                     // 1 pressed
-                    Entry entry1 = new Entry();
-                    entry1._date = DateTime.Today.ToString("MM/dd/yyy");
-                    entry1._promptText = "Some text here";
-                    PromptGenerator prompt1 = new PromptGenerator();
-                    prompt1.GetRandomPrompt();
-                    entry1._entryText = "Some text here";
-                    Console.WriteLine($"{entry1._date}");
-                    Console.WriteLine($"{entry1._promptText}");
-                    Console.WriteLine($"{entry1._entryText}");
+                    // Entry anEntry = new Entry();
+                    // anEntry1._date = DateTime.Today.ToString("MM/dd/yyyy");
+                    // anEntry1._promptText = PromptGenerator.GetRandomPrompt();
+                    // anEntry1._entryText = Entry.entryText();
+                    Console.WriteLine(DateTime.Today.ToString("MM/dd/yyyy"));
+                    Console.WriteLine(PromptGenerator.GetRandomPrompt());
+                    Console.WriteLine(Entry.entryText());
+                    string Entry1 = Console.ReadLine();
+                    journalEntries.Add(Entry1);
+                    // Console.WriteLine($"{_date}\n{_promptText}\n{_entryText}");
                 }
 
                 if (userChoice == 2)
@@ -45,6 +48,7 @@ namespace JournalProgram
                 if (userChoice == 3)
                 {
                     // 3 pressed
+                    // journalEntries.Add(anEntry1);
                     Console.WriteLine("Save File");
 
                 }
@@ -57,6 +61,7 @@ namespace JournalProgram
                     theJournal._entries.Add(anEntry);
                     
                     theJournal.DisplayAll();
+                    // Journal.DisplayAll(journalEntries);
 
                 }
                 else if (userChoice == 5)
@@ -66,8 +71,6 @@ namespace JournalProgram
 
             }
             
-            
-
             Console.WriteLine("See you next time!");          
         }
 
