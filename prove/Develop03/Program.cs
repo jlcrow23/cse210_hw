@@ -9,17 +9,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        
-        Reference r1 = new Reference("Mosiah",3,19);
-        Console.WriteLine(r1.GetDisplayText());
-
-        Reference r2 = new Reference("Mosiah",3,19,20);
-        Console.WriteLine(r2.GetDisplayText());
-
         Console.Clear();
-        Console.Write(r1.GetFullScripRef + " ");
-        Console.Write("scripture Here");
 
-        Console.WriteLine("Hello Develop03 World!");
+        Reference r1= new Reference("John",3,5);
+        Scripture s1 = new Scripture();
+        // r1.GetDisplayText();
+
+        // Reference r2 = new Reference("Mosiah",3,19,20);
+        // r2.GetDisplayText();
+
+        Word.Hide();
     }
 }

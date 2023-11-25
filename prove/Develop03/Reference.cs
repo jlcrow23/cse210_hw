@@ -1,6 +1,6 @@
 
 using System;
-public class Reference
+public class Reference // Keeps track of book, chapter, verse information
 {
     private string _book;
     private int _chapter;
@@ -17,6 +17,7 @@ public class Reference
         _book = book;
         _chapter = chapter;
         _verse = verse;
+        Console.Write($"{book} {chapter}:{verse} ");
         
     }
 
@@ -26,11 +27,12 @@ public class Reference
         _chapter = chapter;
         _verse = verse;
         _endVerse = endVerse;
+        Console.Write($"{book} {chapter}:{verse}-{endVerse} ");
         
     }
-    public string GetDisplayText()
+    public void GetDisplayText()
     {
-        return ${_book} + " " + {_chapter} + ":" + {_verse} + "-" + {_endVerse};
+        Console.WriteLine($"{_book} {_chapter}:{_verse}-{_endVerse}");
 
     }
 
