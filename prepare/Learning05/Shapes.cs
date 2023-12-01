@@ -1,18 +1,18 @@
-public class Shapes
+public abstract class Shapes
 {
     private string _color;
-    private double _area;
-    public string GetColor()
-    {
-        return _color;
-    }
     public void SetColor(string color)
     {
         _color = color;
     }
-    
-    public double GetArea()
+    public string GetColor()
     {
-        return _area;
+        return _color;
     }
+    
+    public Shapes(string color)
+    {
+        _color = color;
+    }
+    public abstract double GetArea();
 }
