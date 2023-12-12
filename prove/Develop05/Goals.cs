@@ -5,6 +5,7 @@ public class Goals
     private static int _points = 0;
     public virtual void RecordEvent()
     {
+        
 
     }
     public virtual bool IsComplete()
