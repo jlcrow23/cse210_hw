@@ -1,7 +1,17 @@
 public class Video
 {
     public string _author;
-    public string _titile;
+    public string _title;
     public int _length;
     public List<Comment> comments = new List<Comment>();
+    public void Display()
+    {
+        Console.WriteLine($"\nTitle: {_title}\nAuthor: {_author}\nLength: {_length}");
+        Console.WriteLine("Comments: ");
+
+        foreach (Comment comment in comments)
+        {
+            comment.Display();
+        }
+    }
 }
