@@ -7,7 +7,8 @@ public class Video
     public void Display()
     {
         Console.WriteLine($"\nTitle: {_title}\nAuthor: {_author}\nLength: {_length}");
-        Console.WriteLine("Comments: ");
+        Console.WriteLine($"Comments: {comments.Count}");
+        
 
         foreach (Comment comment in comments)
         {
