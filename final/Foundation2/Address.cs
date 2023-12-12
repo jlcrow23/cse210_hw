@@ -3,7 +3,7 @@ public class Address : Customer
     private string _streetAddress;
     private string _city;
     private string _stateProvince;
-    private bool _country = true;
+    private string _country;
     public Address(string name, string address, string city, string state, string country)
     {
         name = GetName();
