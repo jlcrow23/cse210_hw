@@ -1,16 +1,18 @@
 public class Customer
 {
     private string _name;
+    public Customer(string CustName)
+    {
+        _name = CustName;
+    }
     public string GetName()
     {
         return _name;
     }
-    public Customer()
+    public string CustName()
     {
-        _name = "Unknown";
+        return _name;
     }
-    public Customer(string name)
-    {
-        name = _name;
-    }
+    
+   
 }
