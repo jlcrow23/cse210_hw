@@ -4,20 +4,43 @@ public class Address : Customer
     private string _city;
     private string _stateProvince;
     private string _country;
-    public Address(string name, string address, string city, string state, string country)
+    public Address(string CustName, string address, string city, string state, string country) : base(CustName)
     {
-        name = GetName();
-        address = _streetAddress;
-        city = _city;
-        state = _stateProvince;
-        country = _country;
+        _streetAddress = address;
+        _city = city;
+        _stateProvince = state;
+        _country = country;
     }
-    public string GetAddress()
+    public string GetStreet()
     {
-        return $"{_streetAddress}\n{_city}, {_stateProvince}, {_country}";
+        return _streetAddress;
     }
-    public void Display()
+    public string GetCity()
     {
-        Console.WriteLine($"{GetName}\n{GetAddress}");
+        return _city;
     }
+    public string GetState()
+    {
+        return _stateProvince;
+    }
+    public string GetCountry()
+    {
+        return _country;
+    }
+
+    public void IsAddressUS()
+    {
+        // if _country == ("US" || "USA" || "United States")
+        // {
+
+        // }
+    }
+    public string GetShippingLabel()
+    {
+        return CustName() + "\n" + _streetAddress + "\n" + _city + ", " + _stateProvince + ", " + _country;
+    }
+    // public string Display()
+    // {
+    //    return GetName() + "\n" + GetAddress();
+    // }
 }
