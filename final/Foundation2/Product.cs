@@ -2,10 +2,10 @@ using System.Data;
 
 public class Product
 {
-    private string _productName;
-    private double _productId;
-    private double _price;
-    private double _quantity;
+    private static string _productName;
+    private static double _productId;
+    private static double _price;
+    private static double _quantity;
     public Product(string productName, double productID, double price, double quantity)
     {
         _productName = productName;
@@ -14,21 +14,25 @@ public class Product
         _quantity = quantity;
         
     }
-    public string GetProductName()
+    // public static string GetProductName()
+    // {
+    //     return _productName;
+    // }
+    // public static double GetProductId()
+    // {
+    //     return _productId;
+    // }
+    // public static double GetPrice()
+    // {
+    //     return _price;
+    // }
+    // public static double GetQuantity()
+    // {
+    //     return _quantity;
+    // }
+    public static double GetTotal()
     {
-        return _productName;
-    }
-    public double GetProductId()
-    {
-        return _productId;
-    }
-    public double GetPrice()
-    {
-        return _price;
-    }
-    public double GetQuantity()
-    {
-        return _quantity;
+        return _price * _quantity;
     }
 
     public string GetProduct()

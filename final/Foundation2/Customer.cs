@@ -1,6 +1,6 @@
 public class Customer
 {
-    private string _name;
+    private static string _name;
     public Customer(string CustName)
     {
         _name = CustName;
@@ -9,7 +9,7 @@ public class Customer
     {
         return _name;
     }
-    public string CustName()
+    public static string CustName()
     {
         return _name;
     }

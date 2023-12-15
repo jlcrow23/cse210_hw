@@ -1,10 +1,10 @@
-public class Address : Customer
+public class Address
 {
-    private string _streetAddress;
-    private string _city;
-    private string _stateProvince;
-    private string _country;
-    public Address(string CustName, string address, string city, string state, string country) : base(CustName)
+    private static string _streetAddress;
+    private static string _city;
+    private static string _stateProvince;
+    private static string _country;
+    public Address(string address, string city, string state, string country)
     {
         _streetAddress = address;
         _city = city;
@@ -28,16 +28,16 @@ public class Address : Customer
         return _country;
     }
 
-    public void IsAddressUS()
+    public static void IsAddressUS()
     {
         // if _country == ("US" || "USA" || "United States")
         // {
 
         // }
     }
-    public string GetShippingLabel()
+    public static string GetShippingLabel()
     {
-        return CustName() + "\n" + _streetAddress + "\n" + _city + ", " + _stateProvince + ", " + _country;
+        return "\n" + Customer.CustName() + "\n" + _streetAddress + "\n" + _city + ", " + _stateProvince + ", " + _country;
     }
     // public string Display()
     // {
