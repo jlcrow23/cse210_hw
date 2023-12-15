@@ -12,7 +12,7 @@ public class OutdoorEvent : Event
     
     public override string FullDetails()
     {
-        return "Event Type: " + GetEventType() + "\nEvent Title: " + GetTitle() + "\nWeather Oulook: " + _weather + "\nWhat: "+ GetDescrip() + "\nWhere: " + GetAddress() +"\nWhen: "+GetDateTime() +" "+GetTime();
+        return "Event Type:\t" + GetEventType() + "\nEvent Title:\t" + GetTitle() + "\nWeather Oulook:\t" + _weather + "\nWhat:\t"+ GetDescrip() + "\nWhere: " + GetAddress() +"\nWhen:\t"+GetDateTime() +" "+GetTime();
     }
 }
    
