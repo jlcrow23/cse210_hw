@@ -3,7 +3,6 @@ using System.Diagnostics.Contracts;
 
 class Program
 {
-    List<Product> packingList = new List<Product>();
     static void Main(string[] args)
     {
         // Order order1 = new Order();
@@ -16,12 +15,16 @@ class Program
         Product p1 = new Product("Glasses", 1234, 3.99, 3);
         Product p2 = new Product("Dress", 2345, 24.99, 1);
 
-        Order.packingList.Add(p1);
-        Order.packingList.Add(p2);
+        Order newOrder = new Order();
+        newOrder.GetOrder("14569");
 
+        Order._packingList.Add(p1);
+        Order._packingList.Add(p2);
+        
         Order.Display();
+        Console.WriteLine($"Your total with shipping is: {Order.GetTotal()}");
 
-        // Console.WriteLine("Product\t\tProductId\tPrice\t  Quantity\n");
+        
         // Console.WriteLine(p1.GetProduct());
         // Console.WriteLine(p2.GetProduct());
     }

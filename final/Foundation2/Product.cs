@@ -1,4 +1,5 @@
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 
 public class Product
 {
@@ -14,29 +15,42 @@ public class Product
         _quantity = quantity;
         
     }
-    // public static string GetProductName()
-    // {
-    //     return _productName;
-    // }
-    // public static double GetProductId()
-    // {
-    //     return _productId;
-    // }
-    // public static double GetPrice()
-    // {
-    //     return _price;
-    // }
-    // public static double GetQuantity()
-    // {
-    //     return _quantity;
-    // }
+    public static string GetProductName()
+    {
+        return _productName;
+    }
+    public static double GetProductId()
+    {
+        return _productId;
+    }
+    public static double GetPrice()
+    {
+        return _price;
+    }
+    public static double GetQuantity()
+    {
+        return _quantity;
+    }
     public static double GetTotal()
     {
-        return _price * _quantity;
+        double sum = 0;
+        double total = 0;
+
+        foreach (Product p in Order._packingList)
+        {
+            
+            total += _price * _quantity;
+            return total;
+            
+            // Console.WriteLine("Your total is: ");
+        }
+        sum += total;
+        return sum;
+
     }
 
-    public string GetProduct()
+    public void GetProduct()
     {
-        return _productName + "\t\t" + _productId + "\t\t" + _price + "\t\t" + _quantity;
+        Console.WriteLine($"{_productName}\t\t{_productId}\t\t{_price}\t\t{_quantity}");
     }
 }
