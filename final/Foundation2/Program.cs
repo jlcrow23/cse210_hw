@@ -16,7 +16,8 @@ class Program
         Product p1 = new Product("Glasses", 1234, 3.99, 3);
         Product p2 = new Product("Dress", 2345, 24.99, 1);
 
-        // Order.packingList.Add(p1);
+        Order.packingList.Add(p1);
+        Order.packingList.Add(p2);
 
         Order.Display();
 
