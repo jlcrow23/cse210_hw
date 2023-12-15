@@ -12,6 +12,10 @@ class Program
         Comment commentV1a = new Comment();
         commentV1a._name = "Bob Star";
         commentV1a._text = "Great video. So funny!";
+
+        Comment commentV1b = new Comment();
+        commentV1b._name = "Bing Crosby";
+        commentV1b._text = "Loved it!";
         
         Video video2 = new Video();
         video2._title = "Girl singing Twinkle";
@@ -32,6 +36,7 @@ class Program
         commentV3a._text = "So Funny! LOL!";
 
         video1.comments.Add(commentV1a);
+        video1.comments.Add(commentV1b);
 
         video2.comments.Add(commentV2a);
 
